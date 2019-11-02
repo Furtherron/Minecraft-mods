@@ -1,5 +1,6 @@
 package com.trynow.adamod.util.handlers;
 
+import com.trynow.adamod.init.BiomeInit;
 import com.trynow.adamod.init.BlockInit;
 import com.trynow.adamod.init.ItemInit;
 import com.trynow.adamod.util.IHasModel;
@@ -46,5 +47,10 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}  
+	}
+	
+	public static void otherRegistries()
+	{
+		BiomeInit.registerBiomes();
 	}
 }

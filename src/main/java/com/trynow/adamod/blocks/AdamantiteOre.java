@@ -8,6 +8,10 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.common.IPlantable;
 
 public class AdamantiteOre extends BlockBase{
 	
@@ -31,5 +35,11 @@ public class AdamantiteOre extends BlockBase{
 		int max = 2;
 		int min = 1;
 		return rand.nextInt(max) + min; 
+	}
+	
+	@Override 
+	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable)
+	{
+		return true;
 	}
 }
