@@ -15,6 +15,6 @@ Blue Adamantium Ore = Mineral de Adamantium Azul
 
 Contiene 1 Mapa Personalizado
 
-Contiene Creador de Mounstruos
+Contiene Creador de Monstruos
 
 El proyecto de mod aún se encuentra en desarrollo.
