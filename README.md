@@ -13,10 +13,15 @@ Contiene 1 nuevo bloque:
 
 Blue Adamantium Ore = Mineral de Adamantium Azul
 
-Añadido 
+#Añadido 
 
 Contiene 1 Mapa Personalizado
 
 Contiene Creador de Monstruos
 
+#Factoring
+Refactorizacion de Clases
+
 El proyecto de mod aún se encuentra en desarrollo.
+
+
