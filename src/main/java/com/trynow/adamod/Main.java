@@ -1,9 +1,8 @@
 package com.trynow.adamod;
 
-import com.trynow.adamod.init.BiomeInit;
 import com.trynow.adamod.proxy.CommonProxy;
 import com.trynow.adamod.util.Reference;
-import com.trynow.adamod.world.ModWorldGen;
+import com.trynow.adamod.util.handlers.RegistryHandler;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -28,8 +27,8 @@ public class Main {
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
-		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
-		BiomeInit.registerBiomes();
+		RegistryHandler.otherRegistries();
+		
 	}
 	@EventHandler
 	public static void Init(FMLInitializationEvent event){}

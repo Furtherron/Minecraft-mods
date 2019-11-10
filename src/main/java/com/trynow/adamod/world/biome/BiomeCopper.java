@@ -2,20 +2,22 @@ package com.trynow.adamod.world.biome;
 
 import java.util.Random;
 
-import com.trynow.adamod.generators.WorldGenCopperTree;
+import com.trynow.adamod.Main;
+import com.trynow.adamod.gen.WorldGenCopperTree;
 import com.trynow.adamod.init.BlockInit;
 
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 
 public class BiomeCopper extends Biome 
 {
 	
- protected static final WorldGenAbstractTree TREE = new WorldGenCopperTree();
-
+ protected static final WorldGenAbstractTree TREE = new WorldGenCopperTree(); 
+ 
 
 			 
  public BiomeCopper()
@@ -27,16 +29,15 @@ public class BiomeCopper extends Biome
 	  fillerBlock = BlockInit.ADAMANTITE_ORE.getDefaultState();
 	  
 	  
-	//  this.decorator.coalGen = new WorldGenMinable(BlockInit.ADAMANTITE_ORE.getDefaultState())
 	  
 	  this.decorator.treesPerChunk = 2;
 	  this.spawnableCaveCreatureList.clear();
 	  this.spawnableCreatureList.clear();
 	  this.spawnableMonsterList.clear();
 	  this.spawnableWaterCreatureList.clear();
-	  
 	  this.spawnableCreatureList.add(new SpawnListEntry(EntityWither.class,10,1,5));
-	  this.spawnableCreatureList.add(new SpawnListEntry(EntityDragon.class,5,1,2));
+	  this.spawnableCreatureList.add(new SpawnListEntry(EntityDragon.class,5,1,2)); 
+	  
 
  }
  
